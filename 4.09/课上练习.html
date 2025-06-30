@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 添加一个id为demo的元素 -->
+    <div id="demo"></div>
+    
+<script>
+    // 确保DOM加载完成后执行JavaScript代码
+    document.addEventListener("DOMContentLoaded", function() {
+        // 获取ID为demo的元素
+        let myDom = document.getElementById("demo");
+        // 完善console.log语句
+        console.log("获取到元素:", myDom);
+        // 修改元素内容
+        myDom.innerHTML = '我是汤兴伟';
+    });
+</script>
+</body>
+</html>

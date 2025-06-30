@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function 点餐(餐名, 通知我) {
+    console.log(`已点${餐名}，厨师正在准备`);
+    
+    // 模拟食物准备时间
+    setTimeout(function() {
+        // 食物准备好了，调用回调函数通知你
+        通知我(`您的${餐名}已经准备好了！`);
+    }, 2000);
+}
+
+点餐("宫保鸡丁", function(消息) {
+    console.log(消息);  // 两秒后输出：您的宫保鸡丁已经准备好了！
+});
+console.log("我可以继续做其他事情");  // 这行会立即执行
+    </script>
+    
+</body>
+</html>
